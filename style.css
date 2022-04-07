@@ -18,7 +18,7 @@ body
 .scan
 {
     position: relative;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -30,4 +30,25 @@ body
     height: 380px;
     background: url(fingerprint_01.png);
     background-size: 300px;
+}
+
+.scan .fingerprint::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(fingerprint_02.png);
+    background-size: 300px;
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate
+{
+    0%,100%
+    {
+        height: 0%;
+    }
 }
