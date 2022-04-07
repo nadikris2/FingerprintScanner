@@ -33,7 +33,7 @@ body
 .navigation
 {
     position: sticky;
-    width: 180px;
+    width: 80px;
     min-height:600px;
     background: #fff;
     display:flex;
@@ -50,7 +50,8 @@ body
     width: 80px;
     height: 70px;
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
     cursor:pointer;
     padding: 0 20px;
     width: 100%;
@@ -61,9 +62,23 @@ body
 {
     content:'';
     position:absolute;
-    width: 35px;
+    width: 50px;
     height: 2px;
     background: #333;
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+.navigation .menu_toogle::after
+{
+    content:'';
+    position:absolute;
+    width: 50px;
+    height: 2px;
+    background: #333;
+    transform: translateY(10px);
+    transition: 0.5s;
+    box-shadow: 0 -10px #333;   
 }
 
 .scan
