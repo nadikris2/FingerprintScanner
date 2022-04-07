@@ -30,7 +30,7 @@ body
     font-size: 2em;
     letter-spacing: 2px;
     color: #b22222;
-    filter:drop-shadow(0 0 20px #ff0000) drop-shadow(0 0 60px #dc143c);
+    filter:drop-shadow(0 0 20px #ff69b4) drop-shadow(0 0 60px #dc143c);
     animation: animate_text 0.1s steps(1) infinite;
 }
 
