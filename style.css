@@ -43,8 +43,11 @@ body
     box-shadow: -20px 20px 50px rgba(0,0,0,0, 0.05);
     transition:0.5s;
 }
-
-.navigation .menu_toogle
+.navigation.active
+{
+    width:250px;
+}
+.navigation .menu_toggle
 {
     position: relative;
     width: 80px;
@@ -58,7 +61,7 @@ body
     border-bottom: 1px solid rgba(0,0,0,0.5s);
 }
 
-.navigation .menu_toogle::before
+.navigation .menu_toggle::before
 {
     content:'';
     position:absolute;
@@ -69,16 +72,27 @@ body
     transition: 0.5s;
 }
 
-.navigation .menu_toogle::after
+.navigation .menu_toggle::after
 {
     content:'';
-    position:absolute;
+    position: absolute;
     width: 50px;
     height: 2px;
     background: #333;
     transform: translateY(10px);
     transition: 0.5s;
     box-shadow: 0 -10px #333;   
+}
+
+.navigation.active .menu_toggle::before
+{
+    transform: translateY(0px) rotate(45deg);
+}
+
+.navigation.active .menu_toggle::after
+{
+    transform: translateY(0px) rotate(-45deg);
+    box-shadow: 0 0 #333;
 }
 
 .scan
@@ -127,6 +141,7 @@ body
     position: relative;
     width: 300px;
     height: 380px;
+    cursor: pointer;
     background: url(fingerprint_01.png);
     background-size: 300px;
 }

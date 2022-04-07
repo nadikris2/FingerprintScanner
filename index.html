@@ -9,10 +9,18 @@
         <div class="row">
             <div class="column">
                 <div class="navigation">
-                    <div class="menu_toogle">
-        
+                    <div class="menu_toggle">
+
                     </div>
                 </div>
+                    <script>
+                        const menu_toggle = document.querySelector('.menu_toggle');
+                        const navigation = document.querySelector('.navigation');
+                                menu_toggle.onclick = function(){
+                                    navigation.classList.toggle('active')
+                            }
+                        </script>
+                
                 </div>
                 <div class="column">
                <div class="scan">
@@ -20,6 +28,13 @@
                     <div class="fingerprint"></div>
                         <h3>Scanning.....</h3>
                 </div>
+                    <script>
+                        const fingerprint =  document.querySelector('.fingerprint');
+                        const scan = document.querySelector('.scan');
+                                fingerprint.onclick = function(){
+                                    scan.classList.fingerprint('active')
+                                }
+                    </script>
                 </div>
         </div>
     </body>
