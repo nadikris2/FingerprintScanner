@@ -51,4 +51,8 @@ body
     {
         height: 0%;
     }
+    50%
+    {
+        height: 100%;
+    }
 }
