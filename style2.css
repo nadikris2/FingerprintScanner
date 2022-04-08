@@ -1,0 +1,31 @@
+*
+{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:consolas;
+}
+
+body
+{
+    margin:0;
+    background:#fff;
+}
+
+.column{
+    float:left;
+    width: 10%;
+    padding: 15px;
+}
+
+.row:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+@media screen and (max-width:600px){
+    .column{
+        width: 100%;
+    }
+}
