@@ -15,7 +15,7 @@ header
     min-height: 100vh;
     background: #111;
 }
-
+/*navigation header */
 .navigationheader
 {
     position: relative;
@@ -24,7 +24,29 @@ header
     background: #212532;
     border-radius: 10px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
 }
+
+.navigationheader span
+{
+    position:absolute;
+    width: 7px;
+    height: 7px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: translate(calc(12px*var(--x)),calc(12px * var(--y)));
+}
+
+.navigationheader.active
+{
+    width: 200px;
+    height: 200px;
+}
+
+/*body */
 body
 {
     margin:0;
