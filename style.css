@@ -7,6 +7,24 @@
 
 }
 
+header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #111;
+}
+
+.navigationheader
+{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background: #212532;
+    border-radius: 10px;
+    cursor: pointer;
+}
 body
 {
     margin:0;
@@ -41,6 +59,7 @@ body
     border-radius:10px;
     box-shadow: -20px 20px 50px rgba(0,0,0,0, 0.05);
     transition:0.5s;
+    overflow: hidden;
 }
 
 .navigation.active
@@ -91,6 +110,7 @@ body
     position: relative;
     height: 30px;
     display: flex;
+    margin-left:1px;
     justify-content: center;
     align-items: center;
     font-size: 0.9em;
