@@ -33,7 +33,7 @@ body
 /*khusus navigation */
 .navigation
 {
-    width: 80px;
+    width: 110px;
     background: #fff;
     display:flex;
     align-items: flex-end;
@@ -42,10 +42,60 @@ body
     box-shadow: -20px 20px 50px rgba(0,0,0,0, 0.05);
     transition:0.5s;
 }
+
 .navigation.active
 {
     width:300px;
 }
+
+.navigation .menu
+{
+    position: relative;
+    width: 100%;
+    padding:10px;
+    transition: 0.5s;
+    border-top: 1px solid rgba(0,0,0,0, 0.05);
+}
+
+.navigation .menu li
+{
+    list-style: none;
+}
+
+.navigation .menu li a
+{
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    color: #111;
+}
+
+.navigation .menu li a:hover
+{
+    background: #0084ff;
+}
+
+.navigation .menu li a .icon
+{
+    position: relative;
+    min-width: 20px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:1.5em;
+}
+
+.navigation .menu li a .text
+{
+    position: relative;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+}
+
 .navigation .menu_toggle
 {
     position: relative;
@@ -92,6 +142,11 @@ body
 {
     transform: translateY(0px) rotate(-45deg);
     box-shadow: 0 0 #333;
+}
+
+.navigation.active .menu
+{
+    padding: 10px 20px;
 }
 
 .navigation .profile
